@@ -1,0 +1,27 @@
+.table-card {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.table-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+
+.filter-input {
+  min-width: 200px;
+}
+
+.dev-table {
+  background: white;
+}
+
+.action-btn {
+  cursor: pointer;
+}

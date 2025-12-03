@@ -1,0 +1,87 @@
+/* Overall App Layout */
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Title */
+.main-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Layout for Form + List */
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Developer Form Card Animation */
+.developer-form {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  width: 350px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: slideUp 0.7s ease;
+}
+
+.developer-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 14px 40px rgba(0,0,0,0.12);
+}
+
+/* Table Card Animation */
+.table-card {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .developer-form {
+    width: 90%;
+  }
+
+  .table-card {
+    width: 95%;
+  }
+}
